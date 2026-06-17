@@ -225,27 +225,44 @@ export function useResumeDownload() {
 
     const experiences = [
       {
-        role: 'Volunteer — SGU Hackathon',
-        org: 'SDGI Global University',
+        role: 'Volunteer — SGU Hackathon 2.0',
+        org: 'SDGI Global University  |  2026',
+        points: [
+          'Volunteered for the second edition of SGU Hackathon as organizer and coordinator.',
+          'Managed participant registration, team coordination, and on-ground event logistics.',
+          'Demonstrated leadership and communication skills in a large-scale tech event.',
+        ],
+      },
+      {
+        role: 'Volunteer — SGU Hackathon 2025',
+        org: 'SDGI Global University  |  2025',
         points: [
           'Assisted in event coordination and participant management for the university hackathon.',
-          'Supported smooth execution of hackathon activities and developed teamwork skills.',
+          'Supported smooth execution of hackathon activities and developed teamwork and leadership skills.',
         ],
       },
       {
         role: 'Participant — ResuCon 2025 Hackathon',
-        org: 'ResuCon',
+        org: 'Bennett University  |  2025',
         points: [
-          'Worked on an AI/ML-based Resume Analysis and Optimization Solution.',
-          'Collaborated in a team environment and applied machine learning to real-world problems.',
+          'Worked on an AI/ML-based Resume Analysis and Optimization Solution at Bennett University.',
+          'Collaborated in a team and applied machine learning concepts to real-world HR problems.',
         ],
       },
       {
-        role: 'Participant — Smart India Hackathon (SIH)',
-        org: 'Government of India',
+        role: 'Participant — Smart India Hackathon (SIH 2025)',
+        org: 'Government of India  |  2025',
         points: [
           'Developed an AI-powered Resume Screening Tool using Python, Machine Learning, and NLP.',
-          'Enhanced problem-solving, teamwork, and technical skills under competitive conditions.',
+          'Competed nationally against top engineering teams; enhanced rapid prototyping skills.',
+        ],
+      },
+      {
+        role: 'Participant — Smart India Hackathon (SIH 2024)',
+        org: 'Government of India  |  2024',
+        points: [
+          'Participated in India\'s largest national hackathon organized by the Government of India.',
+          'Worked on an innovative tech solution addressing a real government problem statement.',
         ],
       },
     ];

@@ -7,7 +7,7 @@ export function About() {
   
   const techSkills = useCountUp(10, 2000, isVisible);
   const certs = useCountUp(7, 2000, isVisible);
-  const hackathons = useCountUp(3, 2000, isVisible);
+  const hackathons = useCountUp(5, 2000, isVisible);
   const projects = useCountUp(1, 2000, isVisible);
 
   const stats = [

@@ -5,9 +5,24 @@ import { Calendar, Trophy, Users, Lightbulb } from 'lucide-react';
 const EXPERIENCES = [
   {
     title: "Volunteer",
-    event: "SGU Hackathon",
-    date: "2024",
+    event: "SGU Hackathon 2.0",
+    org: "SDGI Global University",
+    date: "2026",
     icon: <Users className="w-5 h-5" />,
+    color: "accent",
+    points: [
+      "Volunteered for the second edition of SGU Hackathon as an organizer and coordinator",
+      "Managed participant registration, team coordination, and on-ground event logistics",
+      "Demonstrated leadership and communication skills in a large-scale tech event"
+    ]
+  },
+  {
+    title: "Volunteer",
+    event: "SGU Hackathon 2025",
+    org: "SDGI Global University",
+    date: "2025",
+    icon: <Users className="w-5 h-5" />,
+    color: "primary",
     points: [
       "Assisted in event coordination and participant management",
       "Supported smooth execution of hackathon activities",
@@ -17,23 +32,40 @@ const EXPERIENCES = [
   {
     title: "Participant",
     event: "ResuCon 2025 Hackathon",
+    org: "Bennett University",
     date: "2025",
     icon: <Lightbulb className="w-5 h-5" />,
+    color: "secondary",
     points: [
-      "Worked on AI/ML-based Resume Analysis and Optimization Solution",
+      "Worked on AI/ML-based Resume Analysis and Optimization Solution at Bennett University",
       "Collaborated in a team environment to build prototype features",
       "Applied machine learning concepts to real-world HR problems"
     ]
   },
   {
     title: "Participant",
-    event: "Smart India Hackathon (SIH)",
-    date: "Recent",
+    event: "Smart India Hackathon (SIH 2025)",
+    org: "Government of India",
+    date: "2025",
     icon: <Trophy className="w-5 h-5" />,
+    color: "accent",
     points: [
-      "Developed an AI-powered Resume Screening Tool",
-      "Utilized Python, Machine Learning algorithms, and NLP techniques",
-      "Enhanced problem-solving and technical implementation skills"
+      "Developed an AI-powered Resume Screening Tool using Python, ML, and NLP",
+      "Competed nationally against top engineering teams across India",
+      "Enhanced problem-solving and rapid prototyping skills under pressure"
+    ]
+  },
+  {
+    title: "Participant",
+    event: "Smart India Hackathon (SIH 2024)",
+    org: "Government of India",
+    date: "2024",
+    icon: <Trophy className="w-5 h-5" />,
+    color: "primary",
+    points: [
+      "Participated in India's largest national hackathon organized by the Government of India",
+      "Worked on an innovative tech solution addressing a real government problem statement",
+      "Strengthened Python programming, teamwork, and technical implementation skills"
     ]
   }
 ];
@@ -84,7 +116,8 @@ export function Experience() {
                         
                         <div className={`flex flex-col ${isLeft ? 'md:items-end' : 'md:items-start'} mb-4`}>
                           <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">{exp.title}</h3>
-                          <div className="text-accent font-medium mb-1">{exp.event}</div>
+                          <div className="text-accent font-medium mb-0.5">{exp.event}</div>
+                          <div className="text-xs text-muted-foreground mb-1">{exp.org}</div>
                           <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground">
                             <Calendar className="w-3 h-3" />
                             {exp.date}
