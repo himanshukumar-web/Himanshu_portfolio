@@ -242,10 +242,10 @@ export function useResumeDownload() {
         ],
       },
       {
-        role: 'Participant — ResuCon 2025 Hackathon',
+        role: 'Participant — Rescon 2025 Hackathon',
         org: 'Bennett University  |  2025',
         points: [
-          'Worked on an AI/ML-based Resume Analysis and Optimization Solution at Bennett University.',
+          'Worked on an AI/ML-based Resume Analysis and Optimization Solution at Bennett University (Rescon 2025).',
           'Collaborated in a team and applied machine learning concepts to real-world HR problems.',
         ],
       },

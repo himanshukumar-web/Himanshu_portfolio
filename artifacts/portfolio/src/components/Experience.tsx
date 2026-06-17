@@ -31,13 +31,13 @@ const EXPERIENCES = [
   },
   {
     title: "Participant",
-    event: "ResuCon 2025 Hackathon",
+    event: "Rescon 2025 Hackathon",
     org: "Bennett University",
     date: "2025",
     icon: <Lightbulb className="w-5 h-5" />,
     color: "secondary",
     points: [
-      "Worked on AI/ML-based Resume Analysis and Optimization Solution at Bennett University",
+      "Worked on AI/ML-based Resume Analysis and Optimization Solution at Bennett University (Rescon 2025)",
       "Collaborated in a team environment to build prototype features",
       "Applied machine learning concepts to real-world HR problems"
     ]
