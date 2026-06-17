@@ -47,7 +47,7 @@ export function Contact() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-12 flex items-center gap-4 text-center md:text-left justify-center md:justify-start">
-            <span className="text-primary font-mono text-xl">07.</span>
+            <span className="text-primary font-mono text-xl">06.</span>
             Get In Touch
             <div className="hidden md:block h-px bg-border flex-1 ml-4" />
           </h2>

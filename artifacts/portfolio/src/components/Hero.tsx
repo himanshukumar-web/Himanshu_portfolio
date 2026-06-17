@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useTypingAnimation } from '@/hooks/useTypingAnimation';
+import { useResumeDownload } from '@/hooks/useResumeDownload';
 import { Button } from '@/components/ui/button';
 import { Download, ChevronRight, Mail } from 'lucide-react';
 import { SiPython, SiGithub, SiReact } from 'react-icons/si';
@@ -16,6 +17,7 @@ const ROLES = [
 export function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const typedText = useTypingAnimation(ROLES, 100, 50, 2000);
+  const { downloadResume } = useResumeDownload();
 
   // Particle background effect
   useEffect(() => {
@@ -191,7 +193,7 @@ export function Hero() {
               <Button 
                 variant="outline" 
                 className="glass-panel text-foreground border-primary/50 hover:bg-primary/20 hover:text-white transition-all duration-300 gap-2"
-                onClick={() => window.open('#', '_blank')}
+                onClick={downloadResume}
               >
                 <Download size={18} />
                 Download Resume
