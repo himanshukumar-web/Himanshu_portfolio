@@ -130,19 +130,6 @@ const PROJECTS: Project[] = [
     color: 'secondary',
   },
   {
-    id: 7,
-    title: 'Instagram Clone',
-    subtitle: 'HTML · CSS · UI Cloning',
-    description:
-      'A pixel-perfect Instagram UI clone built with HTML and CSS, demonstrating mastery of modern layout techniques, responsive design, and visual precision.',
-    longDesc:
-      'Recreated Instagram\'s core UI from scratch using pure HTML and CSS — including the feed, story bar, post cards, navigation, and profile sections. Demonstrates strong eye for detail and ability to translate complex visual designs into clean, semantic code.',
-    tech: ['HTML', 'CSS'],
-    github: 'https://github.com/himanshukumar-web/Instagram-clone',
-    icon: <Globe className="w-6 h-6" />,
-    color: 'primary',
-  },
-  {
     id: 8,
     title: 'Python Task Automation',
     subtitle: 'Python · Scripting · Productivity',
