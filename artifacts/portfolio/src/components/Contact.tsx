@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, Loader2 } from 'lucide-react';
 import { SiGithub } from 'react-icons/si';
 import { FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { Button } from '@/components/ui/button';
@@ -11,6 +11,16 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import emailjs from '@emailjs/browser';
+
+// ============================================================================
+// EmailJS Configuration
+// Replace these with your actual EmailJS credentials.
+// Get them from: https://dashboard.emailjs.com/
+// ============================================================================
+const EMAILJS_SERVICE_ID = 'service_s441gck';   // e.g. 'service_xxxxxx'
+const EMAILJS_TEMPLATE_ID = 'template_yfemgko'; // e.g. 'template_xxxxxx'
+const EMAILJS_PUBLIC_KEY = 'yp9Ak_lDX-4yQVw5e';    // e.g. 'xxxxxxxxxxxxxxx'
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -23,18 +33,41 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 
 export function Contact() {
   const { toast } = useToast();
+  const [isSending, setIsSending] = useState(false);
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
     defaultValues: { name: '', email: '', subject: '', message: '' }
   });
 
-  const onSubmit = (data: ContactFormValues) => {
-    console.log("Form submitted:", data);
-    toast({
-      title: "Message Sent Successfully! 🚀",
-      description: "Thanks for reaching out. I'll get back to you soon.",
-    });
-    form.reset();
+  const onSubmit = async (data: ContactFormValues) => {
+    setIsSending(true);
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: data.name,
+          from_email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      toast({
+        title: "Message Sent Successfully! 🚀",
+        description: "Thanks for reaching out. I'll get back to you soon.",
+      });
+      form.reset();
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      toast({
+        title: "Failed to send message ❌",
+        description: "Something went wrong. Please try again or email me directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -56,7 +89,7 @@ export function Contact() {
             {/* Left Info */}
             <div className="space-y-8">
               <p className="text-lg text-foreground/80 leading-relaxed">
-                I'm currently looking for new opportunities, internships, and collaborations. 
+                I'm currently looking for new opportunities, internships, and collaborations.
                 Whether you have a question or just want to say hi, I'll try my best to get back to you!
               </p>
 
@@ -162,19 +195,32 @@ export function Contact() {
                       <FormItem>
                         <FormLabel className="text-foreground/80 font-mono text-xs uppercase">Message</FormLabel>
                         <FormControl>
-                          <Textarea 
-                            placeholder="Hello, I'd like to talk about..." 
-                            className="bg-black/20 border-border focus-visible:border-primary focus-visible:ring-primary/20 min-h-[120px] resize-none" 
-                            {...field} 
+                          <Textarea
+                            placeholder="Hello, I'd like to talk about..."
+                            className="bg-black/20 border-border focus-visible:border-primary focus-visible:ring-primary/20 min-h-[120px] resize-none"
+                            {...field}
                           />
                         </FormControl>
                         <FormMessage className="text-destructive text-xs" />
                       </FormItem>
                     )}
                   />
-                  <Button type="submit" className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white border-0 hover-glow transition-all duration-300 gap-2 h-12">
-                    <Send className="w-4 h-4" />
-                    Send Message
+                  <Button
+                    type="submit"
+                    disabled={isSending}
+                    className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-white border-0 hover-glow transition-all duration-300 gap-2 h-12 disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    {isSending ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4" />
+                        Send Message
+                      </>
+                    )}
                   </Button>
                 </form>
               </Form>
