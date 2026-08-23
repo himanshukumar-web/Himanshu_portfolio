@@ -76,10 +76,8 @@ export function Navigation() {
             onClick={(e) => scrollToSection(e, '#home')}
             className="flex items-center gap-2 group"
           >
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-primary/10 border border-primary/30 group-hover:border-accent transition-colors duration-300">
-              <span className="font-mono font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent group-hover:glow-accent">
-                HK
-              </span>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-primary/10 border border-primary/30 group-hover:border-accent transition-colors duration-300 overflow-hidden p-1">
+              <img src="/hk-logo.png" alt="HK Logo" className="w-full h-full object-contain" />
             </div>
             <span className="font-bold tracking-wider hidden sm:block text-foreground group-hover:text-accent transition-colors duration-300">
               HIMANSHU<span className="text-primary">.</span>
