@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SiPython, SiCplusplus, SiC, SiHtml5, SiCss, SiJavascript } from 'react-icons/si';
+import { SiPython, SiCplusplus, SiC, SiHtml5, SiCss, SiJavascript, SiGithub } from 'react-icons/si';
 import { BrainCircuit, Database, Terminal, FileCode2, Code2, Cpu } from 'lucide-react';
 
 const SKILL_CATEGORIES = [
@@ -112,7 +112,9 @@ export function Skills() {
               <SiGithub className="w-6 h-6" /> GitHub
             </div>
             <div className="flex items-center gap-2 text-foreground/80 hover:text-white transition-colors">
-              <SiCanva className="w-6 h-6 text-[#00C4CC]" /> Canva
+              <svg className="w-6 h-6 text-[#00C4CC]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+              </svg> Canva
             </div>
             <div className="flex items-center gap-2 text-foreground/80 hover:text-white transition-colors">
               <div className="w-6 h-6 rounded bg-orange-600 flex items-center justify-center text-xs font-bold text-white">O</div> MS Office
