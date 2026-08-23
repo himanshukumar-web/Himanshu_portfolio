@@ -50,7 +50,7 @@ export function Hero() {
         this.vx = (Math.random() - 0.5) * 1;
         this.vy = (Math.random() - 0.5) * 1;
         this.radius = Math.random() * 2 + 1;
-        
+
         const colors = ['#00d4ff', '#0066ff', '#7c3aed'];
         this.color = colors[Math.floor(Math.random() * colors.length)];
       }
@@ -69,7 +69,7 @@ export function Hero() {
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         ctx.fillStyle = this.color;
         ctx.fill();
-        
+
         // Add glow
         ctx.shadowBlur = 10;
         ctx.shadowColor = this.color;
@@ -96,15 +96,15 @@ export function Hero() {
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       for (let i = 0; i < particles.length; i++) {
         particles[i].update();
-        
+
         // Mouse repulsion
         const dx = mouseX - particles[i].x;
         const dy = mouseY - particles[i].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        
+
         if (dist < 100) {
           particles[i].x -= dx * 0.05;
           particles[i].y -= dy * 0.05;
@@ -146,16 +146,16 @@ export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Particle Background */}
-      <canvas 
-        ref={canvasRef} 
+      <canvas
+        ref={canvasRef}
         className="absolute inset-0 pointer-events-none opacity-60"
       />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -164,43 +164,43 @@ export function Hero() {
             <div className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium tracking-wide">
               Hello, I'm
             </div>
-            
+
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
               <span className="block text-foreground">HIMANSHU</span>
               <span className="block text-gradient-primary">KUMAR</span>
             </h1>
-            
+
             <div className="h-12 flex items-center">
               <span className="text-xl md:text-2xl text-foreground/80 font-mono">
                 {typedText}
                 <span className="animate-pulse text-accent ml-1">|</span>
               </span>
             </div>
-            
+
             <p className="text-foreground/70 max-w-lg text-lg leading-relaxed">
               Curious and self-driven Computer Science Engineering (AI & ML) student passionate about Artificial Intelligence, Data Analytics, Software Development, and building impactful technology solutions that solve real-world problems.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button 
+              <Button
                 className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white border-0 hover-glow transition-all duration-300 gap-2"
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 View Projects
                 <ChevronRight size={18} />
               </Button>
-              
-              <Button 
-                variant="outline" 
+
+              <Button
+                variant="outline"
                 className="glass-panel text-foreground border-primary/50 hover:bg-primary/20 hover:text-white transition-all duration-300 gap-2"
                 onClick={downloadResume}
               >
                 <Download size={18} />
                 Download Resume
               </Button>
-              
-              <Button 
-                variant="ghost" 
+
+              <Button
+                variant="ghost"
                 className="border border-border hover:border-accent hover:text-accent hover:bg-accent/10 transition-all duration-300 gap-2"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
@@ -209,9 +209,9 @@ export function Hero() {
               </Button>
             </div>
           </motion.div>
-          
+
           {/* Right Content - Visual */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
@@ -220,9 +220,9 @@ export function Hero() {
             {/* Orbital rings */}
             <div className="absolute w-[400px] h-[400px] border border-primary/20 rounded-full animate-[spin_20s_linear_infinite]" />
             <div className="absolute w-[300px] h-[300px] border border-accent/20 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
-            
+
             {/* Floating Icons on orbits */}
-            <motion.div 
+            <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               className="absolute w-[400px] h-[400px]"
@@ -231,8 +231,8 @@ export function Hero() {
                 <SiPython size={24} />
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
               className="absolute w-[300px] h-[300px]"
@@ -251,16 +251,18 @@ export function Hero() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary rounded-full p-[2px]">
                 <div className="w-full h-full bg-background rounded-full flex items-center justify-center relative overflow-hidden">
                   {/* Hexagon pattern overlay */}
-                  <div className="absolute inset-0 opacity-20" 
+                  <div className="absolute inset-0 opacity-20"
                     style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'20\' height=\'34.64101615137754\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M10 0l10 5.773502691896258v11.547005383792516l-10 5.773502691896258-10-5.773502691896258v-11.547005383792516z\' fill=\'none\' stroke=\'%2300d4ff\' stroke-width=\'1\'/%3E%3C/svg%3E")' }}
                   />
-                  <span className="font-mono text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-primary relative z-10">
-                    HK
-                  </span>
+                  <img
+                    src="/hk-logo.png"
+                    alt="Himanshu Kumar"
+                    className="w-32 h-32 object-contain relative z-10 p-2"
+                  />
                 </div>
               </div>
             </div>
-            
+
           </motion.div>
         </div>
       </div>

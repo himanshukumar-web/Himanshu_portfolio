@@ -77,7 +77,7 @@ export function Navigation() {
             className="flex items-center gap-2 group"
           >
             <div className="w-10 h-10 rounded-lg flex items-center justify-center bg-primary/10 border border-primary/30 group-hover:border-accent transition-colors duration-300 overflow-hidden p-1">
-              <img src="/hk-logo.png" alt="HK Logo" className="w-full h-full object-contain" />
+              <img src="/hk-logo.png" alt="Himanshu Kumar" className="w-full h-full object-contain" />
             </div>
             <span className="font-bold tracking-wider hidden sm:block text-foreground group-hover:text-accent transition-colors duration-300">
               HIMANSHU<span className="text-primary">.</span>
