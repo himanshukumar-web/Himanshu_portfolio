@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SiPython, SiCplusplus, SiC, SiHtml5, SiCss, SiJavascript, SiGithub, SiCanva } from 'react-icons/si';
+import { SiPython, SiCplusplus, SiC, SiHtml5, SiCss, SiJavascript } from 'react-icons/si';
 import { BrainCircuit, Database, Terminal, FileCode2, Code2, Cpu } from 'lucide-react';
 
 const SKILL_CATEGORIES = [
