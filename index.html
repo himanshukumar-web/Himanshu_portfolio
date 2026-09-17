@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Himanshu Kumar | AI & Full-Stack Developer</title>
+  <meta name="title" content="Himanshu Kumar | AI & Full-Stack Developer" />
+  <meta name="description" content="Personal profile of Himanshu Kumar — B.Tech Student | AI & Full-Stack Developer. Building intelligent digital experiences with AI, automation and modern web technologies." />
+  <meta name="author" content="Himanshu Kumar" />
+  <meta name="keywords" content="Himanshu Kumar, AI Developer, Full-Stack Developer, B.Tech, Generative AI, LLMs, LangChain, LangGraph, AI Agents, React, Next.js, FastAPI, Node.js, Supabase" />
+  <meta name="theme-color" content="#07090e" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/himanshukumar-web/personal-profile" />
+  <meta property="og:title" content="Himanshu Kumar | AI & Full-Stack Developer" />
+  <meta property="og:description" content="Building intelligent digital experiences with AI, automation and modern web technologies." />
+  <meta property="og:site_name" content="Himanshu Kumar Portfolio" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://github.com/himanshukumar-web/personal-profile" />
+  <meta property="twitter:title" content="Himanshu Kumar | AI & Full-Stack Developer" />
+  <meta property="twitter:description" content="Building intelligent digital experiences with AI, automation and modern web technologies." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230b0f19'/><rect x='2' y='2' width='96' height='96' rx='22' fill='none' stroke='%236366f1' stroke-width='2' stroke-opacity='0.4'/><text x='50' y='64' font-family='sans-serif' font-size='44' font-weight='800' fill='%23818cf8' text-anchor='middle'>HK</text></svg>" />
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Himanshu Kumar",
+    "jobTitle": "AI & Full-Stack Developer",
+    "description": "B.Tech Student passionate about Artificial Intelligence, Generative AI, AI Agents and Full-Stack Development. Building intelligent digital experiences with AI, automation and modern web technologies.",
+    "url": "https://github.com/himanshukumar-web/personal-profile",
+    "sameAs": [
+      "https://github.com/himanshukumar-web",
+      "https://www.linkedin.com/in/himanshu-kumar-813626327"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "AI Agents",
+      "LangChain",
+      "LangGraph",
+      "React",
+      "Next.js",
+      "Node.js",
+      "FastAPI",
+      "Supabase",
+      "PostgreSQL"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient background glow & subtle digital grid -->
+  <div class="ambient-backdrop" aria-hidden="true">
+    <div class="glow-orb orb-primary"></div>
+    <div class="glow-orb orb-secondary"></div>
+    <div class="subtle-grid-overlay"></div>
+  </div>
+
+  <!-- Primary Header & Sticky Navbar -->
+  <header class="site-header" id="top">
+    <div class="header-container">
+      <a href="#top" class="brand-monogram" aria-label="Himanshu Kumar - Back to Top">
+        <span class="brand-box">HK</span>
+        <span class="brand-text">Himanshu<span class="accent-dot">.</span>ai</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+          <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+          <li><a href="#ai-analyzer" class="nav-link" data-section="ai-analyzer">AI Analyzer</a></li>
+          <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Status Badge, Resume CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <div class="status-indicator-pill" title="Currently open for internship & collaboration opportunities">
+          <span class="pulse-beacon" aria-hidden="true">
+            <span class="beacon-core"></span>
+            <span class="beacon-ring"></span>
+          </span>
+          <span class="status-label">Open for Opportunities</span>
+        </div>
+
+        <button type="button" class="btn btn-resume-nav" id="resumeNavBtn" aria-label="View Resume Overview">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileNav">
+          <span class="hamburger-bar bar-1"></span>
+          <span class="hamburger-bar bar-2"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-content">
+        <div class="mobile-status-row">
+          <span class="pulse-beacon" aria-hidden="true">
+            <span class="beacon-core"></span>
+            <span class="beacon-ring"></span>
+          </span>
+          <span class="mobile-status-text">Open for Opportunities</span>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#hero" class="mobile-link" data-section="hero"><span class="m-num">01</span> Home</a></li>
+          <li><a href="#about" class="mobile-link" data-section="about"><span class="m-num">02</span> About</a></li>
+          <li><a href="#skills" class="mobile-link" data-section="skills"><span class="m-num">03</span> Skills</a></li>
+          <li><a href="#projects" class="mobile-link" data-section="projects"><span class="m-num">04</span> Projects</a></li>
+          <li><a href="#experience" class="mobile-link" data-section="experience"><span class="m-num">05</span> Experience</a></li>
+          <li><a href="#ai-analyzer" class="mobile-link" data-section="ai-analyzer"><span class="m-num">06</span> AI Analyzer</a></li>
+          <li><a href="#contact" class="mobile-link" data-section="contact"><span class="m-num">07</span> Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+          <button type="button" class="btn btn-primary btn-mobile-resume" id="mobileResumeBtn">View Resume</button>
+          <a href="#contact" class="btn-mobile-contact">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section section-boundary" id="hero">
+      <div class="section-container hero-layout">
+        
+        <!-- Left: Hero Information Content -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-tagline-chip">
+            <span class="ai-spark-icon" aria-hidden="true">✦</span>
+            <span class="chip-text">AI &amp; FULL-STACK DEVELOPER</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name gradient-text">Himanshu Kumar.</span>
+          </h1>
+
+          <div class="hero-headline-badge">
+            <span class="headline-role">B.Tech Student</span>
+            <span class="headline-divider" aria-hidden="true">•</span>
+            <span class="headline-sub">AI &amp; Full-Stack Developer</span>
+          </div>
+
+          <p class="hero-tagline-main">
+            "Building intelligent digital experiences with AI, automation and modern web technologies."
+          </p>
+
+          <p class="hero-description">
+            Passionate engineering student engineering real-world software at the intersection of Generative AI, autonomous agents, high-performance backends, and responsive modern user interfaces.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="heroExploreBtn">
+              <span>View Projects</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary" id="heroConnectBtn">
+              <span>Contact Me</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Status Indicator Below CTAs -->
+          <div class="hero-status-box">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span class="status-text">Crafting next-gen agentic workflows &amp; web apps</span>
+          </div>
+        </div>
+
+        <!-- Right: Interactive AI Neural Network Canvas -->
+        <div class="hero-visual-wrapper reveal-on-scroll">
+          <div class="canvas-frame">
+            <div class="canvas-header-bar">
+              <div class="window-dots" aria-hidden="true">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="canvas-meta">
+                <span class="canvas-tech-tag">Neural_Network_Simulation.sys</span>
+                <span class="latency-stat">60 FPS • Interactive</span>
+              </div>
+            </div>
+
+            <div class="canvas-viewport" id="neuralCanvasViewport">
+              <canvas id="neuralCanvas" aria-label="Interactive AI Neural Network Visualization"></canvas>
+              <div class="canvas-hud-overlay" aria-hidden="true">
+                <div class="hud-item hud-top-left">
+                  <span class="hud-code">AGENT_CORE: ONLINE</span>
+                </div>
+                <div class="hud-item hud-bottom-right">
+                  <span class="hud-code">HOVER / TOUCH TO INTERACT</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="canvas-footer-bar">
+              <span class="hud-caption">Human × Artificial Intelligence Topology</span>
+              <span class="hud-nodes-count" id="nodeCountLabel">Active Nodes: 48</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about-section section-boundary" id="about">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-label">01 / ABOUT ME</span>
+          <h2 class="section-title">Driven by curiosity, powered by engineering.</h2>
+          <p class="section-subtitle">
+            Bridging theoretical computer science with applied artificial intelligence and production web development.
+          </p>
+        </div>
+
+        <!-- Bio Introduction Card -->
+        <div class="about-bio-card reveal-on-scroll">
+          <div class="bio-accent-bar" aria-hidden="true"></div>
+          <div class="bio-body">
+            <p class="bio-lead">
+              I am a <strong>B.Tech student</strong> passionate about <strong>Artificial Intelligence</strong>, <strong>Generative AI</strong>, <strong>AI Agents</strong>, and <strong>Full-Stack Development</strong>. I specialize in turning complex technological concepts into functional, high-value digital products through continuous experimentation and disciplined software craftsmanship.
+            </p>
+            <div class="bio-meta-row">
+              <span class="bio-pill">B.Tech Student</span>
+              <span class="bio-pill">AI &amp; GenAI Developer</span>
+              <span class="bio-pill">Full-Stack Engineer</span>
+              <span class="bio-pill">Autonomous Systems Builder</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Structured Detail Pillars: Education, Development Interests, AI/Automation Focus -->
+        <div class="about-pillars-grid">
+          
+          <!-- Pillar 01: Education -->
+          <article class="pillar-card reveal-on-scroll" style="--card-index: 1;">
+            <div class="pillar-header">
+              <span class="pillar-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+                </svg>
+              </span>
+              <span class="pillar-category">EDUCATION</span>
+            </div>
+            <h3 class="pillar-heading">B.Tech Engineering</h3>
+            <p class="pillar-text">
+              Undergraduate engineering studies building strong foundations in Data Structures, Algorithms, Database Management, and Object-Oriented System Architecture.
+            </p>
+            <div class="pillar-meta">
+              <span class="pillar-tag">CS Core</span>
+              <span class="pillar-tag">System Design</span>
+              <span class="pillar-tag">Algorithms</span>
+            </div>
+          </article>
+
+          <!-- Pillar 02: Development Interests -->
+          <article class="pillar-card reveal-on-scroll" style="--card-index: 2;">
+            <div class="pillar-header">
+              <span class="pillar-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </span>
+              <span class="pillar-category">DEVELOPMENT FOCUS</span>
+            </div>
+            <h3 class="pillar-heading">Full-Stack Ecosystems</h3>
+            <p class="pillar-text">
+              Architecting fast, responsive frontends with React and Next.js, backed by asynchronous FastAPI and Node.js microservices with clean relational database structures.
+            </p>
+            <div class="pillar-meta">
+              <span class="pillar-tag">React / Next.js</span>
+              <span class="pillar-tag">FastAPI &amp; Node</span>
+              <span class="pillar-tag">RESTful APIs</span>
+            </div>
+          </article>
+
+          <!-- Pillar 03: AI & Automation Focus -->
+          <article class="pillar-card reveal-on-scroll" style="--card-index: 3;">
+            <div class="pillar-header">
+              <span class="pillar-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20" aria-hidden="true">
+                  <path d="M12 2a4 4 0 0 1 4 4c0 1.1-.5 2.1-1.2 2.8l1.7 1.7a6 6 0 0 0 1.5-4.5h2a8 8 0 0 1-2.3 5.7l1.7 1.7a10 10 0 0 0 2.6-7.4h2c0 3.2-1.3 6.1-3.4 8.2l-1.4-1.4"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+              </span>
+              <span class="pillar-category">AI &amp; AUTOMATION</span>
+            </div>
+            <h3 class="pillar-heading">Agentic Reasoning</h3>
+            <p class="pillar-text">
+              Building autonomous multi-agent pipelines with LangChain and LangGraph, exploring LLM prompt engineering, RAG workflows, and intelligent automated tasks.
+            </p>
+            <div class="pillar-meta">
+              <span class="pillar-tag">LangGraph</span>
+              <span class="pillar-tag">LLM Agents</span>
+              <span class="pillar-tag">Automation</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS / TOOLKIT SECTION ==================== -->
+    <section class="skills-section section-boundary" id="skills">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-label">02 / TECHNICAL SKILLS</span>
+          <h2 class="section-title">Organized Technical Stack</h2>
+          <p class="section-subtitle">
+            Categorized tools, frameworks, and technologies leveraged to build reliable, intelligent, and scalable applications.
+          </p>
+        </div>
+
+        <div class="skills-grid-5">
+          
+          <!-- Skill Category 1: Frontend -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="frontend">
+            <div class="card-glow-bg" aria-hidden="true"></div>
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-frontend">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <span class="skill-badge-label">CLIENT LAYER</span>
+                <h3 class="skill-category-title">Frontend</h3>
+              </div>
+            </div>
+            
+            <p class="skill-category-desc">
+              Building dynamic, accessible, and high-performance interactive interfaces with modern reactive component patterns.
+            </p>
+
+            <ul class="skill-tags-list" aria-label="Frontend Skills">
+              <li class="skill-tag highlighted">React</li>
+              <li class="skill-tag highlighted">Next.js</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">TypeScript</li>
+              <li class="skill-tag highlighted">Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 2: Backend -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="backend">
+            <div class="card-glow-bg" aria-hidden="true"></div>
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-backend">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                  <line x1="6" y1="6" x2="6.01" y2="6"/>
+                  <line x1="6" y1="18" x2="6.01" y2="18"/>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <span class="skill-badge-label">SERVER LAYER</span>
+                <h3 class="skill-category-title">Backend</h3>
+              </div>
+            </div>
+
+            <p class="skill-category-desc">
+              Developing high-throughput microservices, robust API gateways, secure asynchronous endpoints, and business logic.
+            </p>
+
+            <ul class="skill-tags-list" aria-label="Backend Skills">
+              <li class="skill-tag highlighted">Node.js</li>
+              <li class="skill-tag">Express</li>
+              <li class="skill-tag highlighted">FastAPI</li>
+              <li class="skill-tag">REST APIs</li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 3: AI -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="ai">
+            <div class="card-glow-bg" aria-hidden="true"></div>
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-ai">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <path d="M12 2a4 4 0 0 1 4 4c0 1.1-.5 2.1-1.2 2.8l1.7 1.7a6 6 0 0 0 1.5-4.5h2a8 8 0 0 1-2.3 5.7l1.7 1.7a10 10 0 0 0 2.6-7.4h2c0 3.2-1.3 6.1-3.4 8.2l-1.4-1.4"/>
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 22a4 4 0 0 1-4-4c0-1.1.5-2.1 1.2-2.8l-1.7-1.7A6 6 0 0 0 6 18H4a8 8 0 0 1 2.3-5.7l-1.7-1.7A10 10 0 0 0 2 18H0"/>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <span class="skill-badge-label">INTELLIGENCE</span>
+                <h3 class="skill-category-title">AI &amp; Agents</h3>
+              </div>
+            </div>
+
+            <p class="skill-category-desc">
+              Integrating state-of-the-art foundation models, stateful agent graphs, autonomous decision loops, and context chaining.
+            </p>
+
+            <ul class="skill-tags-list" aria-label="AI Skills">
+              <li class="skill-tag highlighted">Generative AI</li>
+              <li class="skill-tag">LLMs</li>
+              <li class="skill-tag highlighted">LangChain</li>
+              <li class="skill-tag highlighted">LangGraph</li>
+              <li class="skill-tag highlighted">AI Agents</li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 4: Database -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="database">
+            <div class="card-glow-bg" aria-hidden="true"></div>
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-db">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <span class="skill-badge-label">PERSISTENCE</span>
+                <h3 class="skill-category-title">Database</h3>
+              </div>
+            </div>
+
+            <p class="skill-category-desc">
+              Structuring relational data models, row-level security, realtime sync, and optimized relational querying.
+            </p>
+
+            <ul class="skill-tags-list" aria-label="Database Skills">
+              <li class="skill-tag highlighted">Supabase</li>
+              <li class="skill-tag highlighted">PostgreSQL</li>
+            </ul>
+          </div>
+
+          <!-- Skill Category 5: Tools -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="tools">
+            <div class="card-glow-bg" aria-hidden="true"></div>
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap icon-tools">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </div>
+              <div class="skill-card-title-group">
+                <span class="skill-badge-label">DEVOPS &amp; RUNTIME</span>
+                <h3 class="skill-category-title">Tools</h3>
+              </div>
+            </div>
+
+            <p class="skill-category-desc">
+              Collaborative source control, continuous edge delivery, cross-platform tooling, and developer workflows.
+            </p>
+
+            <ul class="skill-tags-list" aria-label="Tools Skills">
+              <li class="skill-tag">Git</li>
+              <li class="skill-tag highlighted">GitHub</li>
+              <li class="skill-tag highlighted">Vercel</li>
+              <li class="skill-tag">Android/Capacitor</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SELECTED WORK / PROJECTS ==================== -->
+    <section class="projects-section section-boundary" id="projects">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-label">03 / REAL PROJECTS</span>
+          <h2 class="section-title">Featured Engineering Work</h2>
+          <p class="section-subtitle">
+            Real implementations solving genuine problems in healthcare AI, web optimization, intelligent agents, and voice synthesis detection.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 01: Mental Health CBT Companion -->
+          <article class="project-card reveal-on-scroll" id="project-01">
+            <div class="project-inner">
+              <div class="project-header-row">
+                <span class="project-index-large">PROJECT 01</span>
+                <span class="project-badge">AI / Mental Health</span>
+              </div>
+
+              <h3 class="project-title">Mental Health CBT Companion</h3>
+
+              <p class="project-description">
+                An AI-powered mental wellness companion designed to deliver structured, supportive conversations based on Cognitive Behavioral Therapy (CBT) principles. Provides mindful guided reflection exercises, emotional journaling, and personalized stress coping strategies.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="stack-label">TECH STACK:</span>
+                <div class="stack-badges">
+                  <span class="stack-badge">Next.js</span>
+                  <span class="stack-badge">React</span>
+                  <span class="stack-badge">FastAPI</span>
+                  <span class="stack-badge">Supabase</span>
+                  <span class="stack-badge highlight-pill">LangChain</span>
+                  <span class="stack-badge highlight-pill">LangGraph</span>
+                  <span class="stack-badge highlight-pill">GenAI</span>
+                </div>
+              </div>
+
+              <div class="project-links-row">
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn primary-link">
+                  <span>View GitHub</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary-link">
+                  <span>Live Demo</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Page Pulse -->
+          <article class="project-card reveal-on-scroll" id="project-02">
+            <div class="project-inner">
+              <div class="project-header-row">
+                <span class="project-index-large">PROJECT 02</span>
+                <span class="project-badge">Web Analytics / SEO</span>
+              </div>
+
+              <h3 class="project-title">Page Pulse</h3>
+
+              <p class="project-description">
+                A web-based SEO analysis platform that inspects live URLs to diagnose page metadata, semantic DOM structure, core web performance markers, and accessibility compliance. Yields structured optimization checklists for creators and developers.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="stack-label">TECH STACK:</span>
+                <div class="stack-badges">
+                  <span class="stack-badge">React</span>
+                  <span class="stack-badge">Vite</span>
+                  <span class="stack-badge">Node.js</span>
+                  <span class="stack-badge">Express</span>
+                  <span class="stack-badge">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div class="project-links-row">
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn primary-link">
+                  <span>View GitHub</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary-link">
+                  <span>Live Demo</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: AI Agent / Jarvis -->
+          <article class="project-card reveal-on-scroll" id="project-03">
+            <div class="project-inner">
+              <div class="project-header-row">
+                <span class="project-index-large">PROJECT 03</span>
+                <span class="project-badge">Agentic Systems / Voice</span>
+              </div>
+
+              <h3 class="project-title">AI Agent / Jarvis</h3>
+
+              <p class="project-description">
+                An intelligent desktop companion capable of natural voice recognition, dynamic LLM tool execution, and local OS automation. Dispatches automated shell tasks, opens applications, searches knowledge bases, and performs hands-free developer workflows.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="stack-label">TECH STACK:</span>
+                <div class="stack-badges">
+                  <span class="stack-badge highlight-pill">Python</span>
+                  <span class="stack-badge highlight-pill">LLM APIs</span>
+                  <span class="stack-badge">LangChain</span>
+                  <span class="stack-badge">Speech Recognition</span>
+                  <span class="stack-badge">Automation</span>
+                </div>
+              </div>
+
+              <div class="project-links-row">
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn primary-link">
+                  <span>View GitHub</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary-link">
+                  <span>Live Demo</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: AI Voice Detection System -->
+          <article class="project-card reveal-on-scroll" id="project-04">
+            <div class="project-inner">
+              <div class="project-header-row">
+                <span class="project-index-large">PROJECT 04</span>
+                <span class="project-badge">Audio ML / Security</span>
+              </div>
+
+              <h3 class="project-title">AI Voice Detection System</h3>
+
+              <p class="project-description">
+                A machine learning system engineered to classify audio streams and identify whether voice samples are synthesized/deepfake or authentic human speech. Employs acoustic spectrogram feature extraction and neural inference pipelines for real-time verification.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="stack-label">TECH STACK:</span>
+                <div class="stack-badges">
+                  <span class="stack-badge highlight-pill">Python</span>
+                  <span class="stack-badge highlight-pill">FastAPI</span>
+                  <span class="stack-badge">PyTorch</span>
+                  <span class="stack-badge">Audio ML</span>
+                  <span class="stack-badge">Signal Processing</span>
+                  <span class="stack-badge">React</span>
+                </div>
+              </div>
+
+              <div class="project-links-row">
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn primary-link">
+                  <span>View GitHub</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="project-link-btn secondary-link">
+                  <span>Live Demo</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE / JOURNEY SECTION ==================== -->
+    <section class="experience-section section-boundary" id="experience">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-label">04 / JOURNEY &amp; MILESTONES</span>
+          <h2 class="section-title">Growth &amp; Technical Evolution</h2>
+          <p class="section-subtitle">
+            Key milestones spanning academic foundations, production web engineering, and autonomous AI development.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Milestone 01 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-badge-row">
+                <span class="timeline-phase">PHASE 01</span>
+                <span class="timeline-period">FOUNDATION</span>
+              </div>
+              <h3 class="timeline-item-title">CS Engineering &amp; Algorithmic Foundations</h3>
+              <p class="timeline-item-desc">
+                Immersed into Computer Science coursework during B.Tech studies. Mastered Data Structures, Object-Oriented Programming (Java, C++, Python), and fundamental software engineering principles.
+              </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Data Structures</span>
+                <span class="t-tag">Algorithms</span>
+                <span class="t-tag">OOP</span>
+                <span class="t-tag">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 02 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-badge-row">
+                <span class="timeline-phase">PHASE 02</span>
+                <span class="timeline-period">FULL-STACK</span>
+              </div>
+              <h3 class="timeline-item-title">Modern Web Engineering &amp; Cloud Integration</h3>
+              <p class="timeline-item-desc">
+                Transitioned to building comprehensive web architectures. Crafted responsive user interfaces with React and Next.js, developed RESTful services using Node.js and FastAPI, and integrated PostgreSQL &amp; Supabase data layers.
+              </p>
+              <div class="timeline-tags">
+                <span class="t-tag">React</span>
+                <span class="t-tag">Next.js</span>
+                <span class="t-tag">FastAPI</span>
+                <span class="t-tag">Supabase</span>
+                <span class="t-tag">Vercel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 03 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-badge-row">
+                <span class="timeline-phase">PHASE 03</span>
+                <span class="timeline-period">AI &amp; AGENTS</span>
+              </div>
+              <h3 class="timeline-item-title">Generative AI, LLMs &amp; Agentic Architectures</h3>
+              <p class="timeline-item-desc">
+                Specialized in practical GenAI applications. Built multi-step agentic graphs with LangChain and LangGraph, automated desktop workflows (Jarvis), and integrated audio ML for deepfake voice detection.
+              </p>
+              <div class="timeline-tags">
+                <span class="t-tag">LangChain</span>
+                <span class="t-tag">LangGraph</span>
+                <span class="t-tag">AI Agents</span>
+                <span class="t-tag">Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 04 -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content-card">
+              <div class="timeline-badge-row">
+                <span class="timeline-phase">PHASE 04</span>
+                <span class="timeline-period">PRODUCTION &amp; BEYOND</span>
+              </div>
+              <h3 class="timeline-item-title">Internships, Collaboration &amp; Shipped Solutions</h3>
+              <p class="timeline-item-desc">
+                Engaged in internship tasks, open-source portfolio repositories, and real-world system delivery. Committed to high code standards, maintainable architecture, and user-centric software design.
+              </p>
+              <div class="timeline-tags">
+                <span class="t-tag">Internship Projects</span>
+                <span class="t-tag">Open Source</span>
+                <span class="t-tag">Clean Architecture</span>
+                <span class="t-tag">Continuous Learning</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== AI CAPABILITY: PROFILE ANALYZER ==================== -->
+    <section class="ai-analyzer-section section-boundary" id="ai-analyzer">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-label">05 / INTERACTIVE AI DEMO</span>
+          <h2 class="section-title">AI Profile Analyzer</h2>
+          <p class="section-subtitle">
+            Simulated role matching demonstration: Select a target engineering domain to assess my skills alignment and recommended architecture.
+          </p>
+        </div>
+
+        <div class="analyzer-wrapper reveal-on-scroll">
+          
+          <!-- Simulation Notice Banner -->
+          <div class="simulation-banner">
+            <span class="sim-pill">SIMULATED DEMO</span>
+            <span class="sim-text">Client-side interactive model demonstrating dynamic role alignment &amp; skill synthesis. (No real paid API key connected).</span>
+          </div>
+
+          <!-- Role Selector Buttons -->
+          <div class="analyzer-controls" role="tablist" aria-label="Select Target Domain">
+            <button type="button" class="analyzer-tab active" data-role="frontend" role="tab" aria-selected="true">
+              <span class="tab-indicator"></span>
+              <span>Frontend</span>
+            </button>
+            <button type="button" class="analyzer-tab" data-role="backend" role="tab" aria-selected="false">
+              <span class="tab-indicator"></span>
+              <span>Backend</span>
+            </button>
+            <button type="button" class="analyzer-tab" data-role="ai" role="tab" aria-selected="false">
+              <span class="tab-indicator"></span>
+              <span>AI / GenAI</span>
+            </button>
+            <button type="button" class="analyzer-tab" data-role="fullstack" role="tab" aria-selected="false">
+              <span class="tab-indicator"></span>
+              <span>Full Stack</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Output Card -->
+          <div class="analyzer-output-card" id="analyzerOutput">
+            
+            <div class="analyzer-top-meta">
+              <div class="analyzer-role-info">
+                <span class="meta-label">DOMAIN TARGET:</span>
+                <h3 class="meta-role-name" id="analyzerRoleTitle">Frontend Engineering</h3>
+              </div>
+              <div class="analyzer-score-badge">
+                <span class="score-label">SIMULATED MATCH</span>
+                <span class="score-number" id="analyzerScore">95%</span>
+              </div>
+            </div>
+
+            <div class="analyzer-body-grid">
+              
+              <div class="analyzer-col">
+                <h4 class="col-title">Core Competencies</h4>
+                <div class="analyzer-tags" id="analyzerCompetencies">
+                  <span class="a-tag">React (Hooks, Context, State)</span>
+                  <span class="a-tag">Next.js (App Router, SSR)</span>
+                  <span class="a-tag">TypeScript &amp; Modern ES6+</span>
+                  <span class="a-tag">Tailwind CSS &amp; Modern UI/UX</span>
+                  <span class="a-tag">Responsive Layouts &amp; Accessibility</span>
+                </div>
+              </div>
+
+              <div class="analyzer-col">
+                <h4 class="col-title">Relevant Highlight Projects</h4>
+                <div class="analyzer-projects" id="analyzerProjects">
+                  <div class="a-proj-item">
+                    <strong>Page Pulse:</strong> Web analytics dashboard with reactive metric charts and responsive design.
+                  </div>
+                  <div class="a-proj-item">
+                    <strong>CBT Mental Health Companion:</strong> Clean conversational UI with emotional journaling interface.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="analyzer-recommendation-box">
+              <div class="rec-header">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                </svg>
+                <span class="rec-title">SIMULATED AI SUMMARY &amp; ARCHITECTURAL RECOMMENDATION</span>
+              </div>
+              <p class="rec-text" id="analyzerSummary">
+                Himanshu possesses strong frontend development capabilities with React, Next.js, and TypeScript. Ideal for crafting interactive user interfaces, data dashboards, design-system components, and consumer-facing web applications.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-section section-boundary" id="contact">
+      <div class="section-container">
+        
+        <div class="contact-wrapper reveal-on-scroll">
+          
+          <div class="section-header">
+            <span class="section-label">06 / GET IN TOUCH</span>
+            <h2 class="section-title">Let's Connect &amp; Build</h2>
+            <p class="section-subtitle">
+              Have an opportunity, internship inquiry, or want to collaborate on an AI project? Send me a message or connect through my social profiles.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            
+            <!-- Left Column: Interactive Contact Form UI -->
+            <div class="contact-form-card">
+              <div class="form-header">
+                <h3 class="form-title">Send a Direct Message</h3>
+                <p class="form-subtitle">Fill out the form below and I'll respond as soon as possible.</p>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Full Name <span class="required-star">*</span></label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Johnson" required autocomplete="name" />
+                  <span class="form-error-msg" id="nameError" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. alex@example.com" required autocomplete="email" />
+                  <span class="form-error-msg" id="emailError" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiryType" class="form-label">Inquiry Purpose</label>
+                  <select id="inquiryType" name="inquiryType" class="form-input form-select">
+                    <option value="Internship Opportunity">Internship Opportunity</option>
+                    <option value="Project Collaboration">Project Collaboration</option>
+                    <option value="AI / Full-Stack Work">AI / Full-Stack Work</option>
+                    <option value="General Networking">General Networking</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Message <span class="required-star">*</span></label>
+                  <textarea id="senderMessage" name="message" class="form-input form-textarea" rows="4" placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+                  <span class="form-error-msg" id="messageError" aria-live="polite"></span>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn btn-primary btn-submit" id="submitFormBtn">
+                    <span id="btnSubmitText">Send Message</span>
+                    <svg class="submit-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                      <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                    </svg>
+                  </button>
+                  <span class="form-note">Guaranteed fast response • No spam</span>
+                </div>
+              </form>
+
+              <!-- Success Alert Box (hidden initially) -->
+              <div class="form-success-banner" id="formSuccessBanner" style="display: none;" role="alert">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+                <div>
+                  <strong>Message sent successfully!</strong>
+                  <p>Thank you for reaching out, I will be in touch shortly.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Direct Channels & Social Profiles -->
+            <div class="contact-channels-wrapper">
+              
+              <!-- Quick Action Card: Email Copy -->
+              <div class="quick-contact-card">
+                <div class="quick-card-inner">
+                  <span class="quick-card-title">Direct Email Address</span>
+                  <p class="quick-card-email">Himanshukumar160077@gmail.com</p>
+                  
+                  <div class="quick-actions-row">
+                    <a href="mailto:Himanshukumar160077@gmail.com" class="btn btn-primary btn-sm">
+                      <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                      </svg>
+                      <span>Compose Email</span>
+                    </a>
+
+                    <button type="button" class="btn btn-copy btn-sm" id="copyEmailBtn" aria-label="Copy Email Address to Clipboard">
+                      <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <span id="copyBtnText">Copy Email</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Channel Cards List -->
+              <div class="channels-list">
+                
+                <!-- GitHub -->
+                <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-name">GitHub</span>
+                    <span class="channel-value">github.com/himanshukumar-web</span>
+                  </div>
+                  <svg class="channel-arrow" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/himanshu-kumar-813626327" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <div class="channel-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.66 1.66 1.66.92 0 1.66-.74 1.66-1.66 0-.92-.74-1.66-1.66-1.66z" />
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-name">LinkedIn</span>
+                    <span class="channel-value">linkedin.com/in/himanshu-kumar-813626327</span>
+                  </div>
+                  <svg class="channel-arrow" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+
+                <!-- Location / Status -->
+                <div class="channel-card non-clickable">
+                  <div class="channel-icon-wrap">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                      <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-name">Location</span>
+                    <span class="channel-value">India (Available for Remote / Hybrid)</span>
+                  </div>
+                  <span class="online-dot" title="Active"></span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-brand-col">
+        <a href="#top" class="footer-logo">HIMANSHU KUMAR</a>
+        <p class="footer-motto">
+          "Building intelligent digital experiences with AI, automation and modern web technologies."
+        </p>
+      </div>
+
+      <div class="footer-links-col">
+        <a href="#hero" class="footer-link">Home</a>
+        <span class="footer-separator" aria-hidden="true">•</span>
+        <a href="#about" class="footer-link">About</a>
+        <span class="footer-separator" aria-hidden="true">•</span>
+        <a href="#skills" class="footer-link">Skills</a>
+        <span class="footer-separator" aria-hidden="true">•</span>
+        <a href="#projects" class="footer-link">Projects</a>
+        <span class="footer-separator" aria-hidden="true">•</span>
+        <a href="#experience" class="footer-link">Experience</a>
+        <span class="footer-separator" aria-hidden="true">•</span>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+
+      <div class="footer-copy-col">
+        <div class="footer-social-icons">
+          <a href="https://github.com/himanshukumar-web" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/himanshu-kumar-813626327" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.66 1.66 1.66.92 0 1.66-.74 1.66-1.66 0-.92-.74-1.66-1.66-1.66z"/></svg>
+          </a>
+          <a href="mailto:Himanshukumar160077@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+        <p class="copyright-text">© 2026 Himanshu Kumar. Built with clean web standards.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== RESUME PREVIEW MODAL ==================== -->
+  <div class="resume-modal-backdrop" id="resumeModal" aria-hidden="true" role="dialog" aria-labelledby="resumeModalTitle">
+    <div class="resume-modal-container">
+      <div class="resume-modal-header">
+        <div>
+          <span class="resume-tag">PROFILE OVERVIEW</span>
+          <h2 class="resume-title" id="resumeModalTitle">Himanshu Kumar — Resume</h2>
+          <span class="resume-subtitle">B.Tech Student | AI &amp; Full-Stack Developer</span>
+        </div>
+        <button type="button" class="btn-close-modal" id="closeResumeBtn" aria-label="Close Resume Modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="resume-modal-body">
+        <div class="resume-section-block">
+          <h3 class="r-section-heading">Academic Education</h3>
+          <div class="r-card">
+            <div class="r-card-row">
+              <strong>Bachelor of Technology (B.Tech)</strong>
+              <span class="r-date">Undergraduate</span>
+            </div>
+            <p class="r-detail">Focused on Computer Science, Data Structures, Algorithms, System Design, and Modern Artificial Intelligence paradigms.</p>
+          </div>
+        </div>
+
+        <div class="resume-section-block">
+          <h3 class="r-section-heading">Core Technical Strengths</h3>
+          <div class="r-skills-grid">
+            <div>
+              <span class="r-cat">AI &amp; Agents:</span>
+              <p>Generative AI, LLMs, LangChain, LangGraph, AI Agents, Prompt Engineering</p>
+            </div>
+            <div>
+              <span class="r-cat">Frontend:</span>
+              <p>React, Next.js, TypeScript, JavaScript, Tailwind CSS, Responsive Design</p>
+            </div>
+            <div>
+              <span class="r-cat">Backend &amp; Cloud:</span>
+              <p>Node.js, Express, FastAPI, REST APIs, Supabase, PostgreSQL, Vercel</p>
+            </div>
+            <div>
+              <span class="r-cat">Tools &amp; Languages:</span>
+              <p>Python, Java, C++, Git, GitHub, VS Code, Android/Capacitor</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-section-block">
+          <h3 class="r-section-heading">Key Project Highlights</h3>
+          <ul class="r-list">
+            <li><strong>Mental Health CBT Companion:</strong> AI wellness companion utilizing LangChain, LangGraph, Next.js, and Supabase for cognitive behavioral guidance.</li>
+            <li><strong>Page Pulse:</strong> High-performance SEO analysis web platform parsing web metrics and accessibility hierarchies.</li>
+            <li><strong>AI Agent / Jarvis:</strong> Voice-orchestrated intelligent assistant delivering tool calling and automated OS tasks.</li>
+            <li><strong>AI Voice Detection System:</strong> Audio classification system distinguishing deepfake/synthetic voices from human speech.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="resume-modal-footer">
+        <a href="mailto:Himanshukumar160077@gmail.com?subject=Opportunity%20Discussion" class="btn btn-primary btn-sm">
+          <span>Contact Directly</span>
+        </a>
+        <button type="button" class="btn btn-secondary btn-sm" id="closeModalBottomBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification element for Copy feedback -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite">
+    <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+    </svg>
+    <span id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
